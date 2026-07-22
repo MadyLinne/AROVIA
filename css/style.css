@@ -578,7 +578,7 @@ footer {
 
 /*========== MOBILE ==========*/
 
-@media(max-width:1100px) {
+@media(max-width:768px) {
 
     /* Navbar */
 
@@ -705,11 +705,39 @@ footer {
         font-size: 32px;
     }
 
-    /* Footer */
+    /* about */
 
-    footer {
-        padding: 40px 20px;
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 80px 20px;
+        gap: 35px;
         text-align: center;
     }
 
+    .about h2 {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .quote {
+        width: 100%;
+        height: auto;
+        padding: 35px 25px;
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
 }
