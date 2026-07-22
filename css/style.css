@@ -190,7 +190,8 @@ nav a:hover {
 }
 
 .title p {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     font-size: 20px;
     line-height: 1.8;
     color: #666666;
@@ -272,76 +273,76 @@ nav a:hover {
     color: #111111;
 }
 
-footer{
-    background:#FFFFFF;
-    border-top:1px solid #E5E5E5;
-    padding:70px 8%;
+footer {
+    background: #FFFFFF;
+    border-top: 1px solid #E5E5E5;
+    padding: 70px 8%;
 }
 
-.footer-container{
-    display:grid;
-    grid-template-columns:2fr 1.5fr 1fr;
-    gap:60px;
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    gap: 60px;
 }
 
-.footer-brand h3{
-    font-family:"Cormorant Garamond",serif;
-    font-size:42px;
-    letter-spacing:5px;
-    margin-bottom:15px;
-    color:#111111;
+.footer-brand h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    color: #111111;
 }
 
-.footer-brand p{
-    color:#666666;
-    line-height:1.8;
+.footer-brand p {
+    color: #666666;
+    line-height: 1.8;
 }
 
-.copyright{
-    margin-top:20px;
-    font-size:14px;
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .footer-contact,
-.footer-social{
-    display:flex;
-    flex-direction:column;
-    gap:14px;
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .footer-contact h4,
-.footer-social h4{
-    font-size:20px;
-    margin-bottom:10px;
-    color:#111111;
+.footer-social h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #111111;
 }
 
-.footer-contact p{
-    color:#666666;
-    line-height:1.8;
+.footer-contact p {
+    color: #666666;
+    line-height: 1.8;
 }
 
-.footer-social a{
-    color:#666666;
-    transition:.3s;
+.footer-social a {
+    color: #666666;
+    transition: .3s;
 }
 
-.footer-social a:hover{
-    color:#111111;
+.footer-social a:hover {
+    color: #111111;
 }
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
-.footer-container{
-grid-template-columns:1fr;
-gap:40px;
-text-align:center;
-}
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
 
-.footer-contact,
-.footer-social{
-align-items:center;
-}
+    .footer-contact,
+    .footer-social {
+        align-items: center;
+    }
 
 }
 
@@ -482,97 +483,97 @@ align-items:center;
     line-height: 1.8;
 }
 
-.disc-popup{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.55);
-display:flex;
-justify-content:center;
-align-items:center;
-opacity:0;
-visibility:hidden;
-transition:.35s;
-z-index:99999;
-backdrop-filter:blur(4px);
+.disc-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .35s;
+    z-index: 99999;
+    backdrop-filter: blur(4px);
 }
 
-.disc-popup.show{
-opacity:1;
-visibility:visible;
+.disc-popup.show {
+    opacity: 1;
+    visibility: visible;
 }
 
-.disc-box{
-width:90%;
-max-width:500px;
-background:#fff;
-padding:45px;
-border-radius:24px;
-text-align:center;
-position:relative;
-animation:popup .35s;
+.disc-box {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 45px;
+    border-radius: 24px;
+    text-align: center;
+    position: relative;
+    animation: popup .35s;
 }
 
-.disc-box h2{
-font-size:42px;
-font-family:"Cormorant Garamond",serif;
-margin-bottom:18px;
-color:#111;
+.disc-box h2 {
+    font-size: 42px;
+    font-family: "Cormorant Garamond", serif;
+    margin-bottom: 18px;
+    color: #111;
 }
 
-.disc-box p{
-color:#666;
-line-height:1.8;
-margin-bottom:35px;
+.disc-box p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 35px;
 }
 
-.disc-btns{
-display:flex;
-gap:15px;
+.disc-btns {
+    display: flex;
+    gap: 15px;
 }
 
 .disc-btns a,
-.disc-btns button{
-flex:1;
-padding:16px;
-border:none;
-border-radius:999px;
-cursor:pointer;
-font-size:16px;
-transition:.3s;
-text-decoration:none;
+.disc-btns button {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+    text-decoration: none;
 }
 
-.start-disc{
-background:#111;
-color:#fff;
+.start-disc {
+    background: #111;
+    color: #fff;
 }
 
-.start-disc:hover{
-background:#333;
+.start-disc:hover {
+    background: #333;
 }
 
-#laterDisc{
-background:#eee;
-color:#111;
+#laterDisc {
+    background: #eee;
+    color: #111;
 }
 
-#laterDisc:hover{
-background:#ddd;
+#laterDisc:hover {
+    background: #ddd;
 }
 
-.disc-close{
-position:absolute;
-top:15px;
-right:18px;
-background:none;
-border:none;
-font-size:30px;
-cursor:pointer;
-color:#888;
+.disc-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #888;
 }
 
-.disc-close:hover{
-color:#111;
+.disc-close:hover {
+    color: #111;
 }
 
 /*========== MOBILE ==========*/
@@ -607,37 +608,57 @@ color:#111;
     /* Hero */
 
     .hero {
+        display: flex;
         flex-direction: column;
-        padding: 110px 20px 50px;
-        gap: 35px;
-    }
-
-    .hero-left,
-    .hero-right {
-        width: 100%;
-        text-align: center;
+        min-height: auto;
+        padding: 90px 20px 40px;
+        gap: 30px;
     }
 
     .hero-left {
+        width: 100%;
+        height: auto;
         padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-left h1 {
-        font-size: 42px;
+        font-size: 52px;
+        margin-bottom: 15px;
     }
 
     .hero-left h2 {
-        font-size: 26px;
+        font-size: 30px;
+        margin-bottom: 15px;
     }
 
     .hero-left p {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .hero-btn {
+        align-self: center;
+    }
+
+    .hero-right {
+        position: relative;
+        width: 100%;
+        height: 320px;
+        right: auto;
+        top: auto;
+        bottom: auto;
     }
 
     .hero-right video {
+        position: relative;
         width: 100%;
-        height: auto;
-        border-radius: 15px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
     }
 
     /* Collection */
