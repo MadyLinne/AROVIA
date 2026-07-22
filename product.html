@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AROVIA | Product</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/product.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            AROVIA
+
+        </a>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Trang chủ</a>
+            <a href="collection.html">Bộ sưu tập</a>
+            <a href="about.html">Về chúng tôi</a>
+            <a href="disc.html">DISC</a>
+        </nav>
+
+        <div class="nav-icons">
+
+            <button id="cartBtn" class="cart-btn">
+
+                <img src="img/shopping-cart.png">
+
+                <span id="cartBadge">0</span>
+
+            </button>
+
+            <button id="menuBtn" class="menu-btn">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <main class="product-page">
+
+        <div class="product-gallery">
+            <img id="mainImage" src="img/cocoNoir.png">
+        </div>
+
+        <div class="product-info">
+
+            <span class="category">
+                AROVIA COLLECTION
+            </span>
+
+            <h1 id="productName">
+                Noir Essence
+            </h1>
+
+            <p class="price" id="productPrice">
+                2.390.000₫
+            </p>
+
+            <p id="productDescription">
+                Một mùi hương mang phong cách bí ẩn,
+                kết hợp giữa gỗ, da thuộc và xạ hương,
+                được tạo nên dành cho những người yêu sự mạnh mẽ nhưng vẫn đầy tinh tế.
+            </p>
+
+            <div class="notes">
+
+                <div>
+                    <h3>
+                        Top Notes
+                    </h3>
+
+                    <ul id="topNotes">
+                        <li>Bergamot</li>
+                        <li>Pink Pepper</li>
+                        <li>Lemon</li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <h3>
+                        Middle Notes
+                    </h3>
+
+                    <ul id="middleNotes">
+                        <li>Lavender</li>
+                        <li>Cedarwood</li>
+                        <li>Rose</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>
+                        Base Notes
+                    </h3>
+                    <ul id="baseNotes">
+                        <li>Musk</li>
+                        <li>Leather</li>
+                        <li>Amber</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="quantity">
+
+                <button id="minus">−</button>
+
+                <span id="qty">1</span>
+
+                <button id="plus">+</button>
+
+            </div>
+
+            <div class="product-buttons">
+
+                <button id="addCartBtn">
+                    Thêm vào giỏ
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section class="product-detail">
+
+        <h2>
+            Về sản phẩm
+        </h2>
+
+        <p>
+            AROVIA luôn hướng đến việc tạo ra những mùi hương mang dấu ấn cá nhân.
+            Mỗi chai nước hoa đều được pha chế từ nguyên liệu cao cấp,
+            giúp lưu hương lâu và mang lại trải nghiệm sang trọng.
+        </p>
+
+    </section>
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+
+            <h2>
+                Giỏ hàng
+                <span id="cartCount">(0)</span>
+            </h2>
+
+            <button id="closeCart">✕</button>
+
+        </div>
+
+        <div class="cart-body" id="cartBody">
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Tổng cộng
+                </span>
+
+                <strong id="cartTotal">0₫</strong>
+
+            </div>
+
+            <button class="checkout-btn" onclick="location.href='checkout.html'">
+                Thanh toán
+            </button>
+        </div>
+
+    </aside>
+
+ <footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h3>AROVIA</h3>
+
+            <p>
+                Fragrance with a Unique Signature
+            </p>
+
+            <p class="copyright">
+                © 2026 AROVIA Boutique Perfume. All Rights Reserved.
+            </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h4>Liên hệ</h4>
+
+            <p>📧 Email: arovia.vn@gmail.com</p>
+
+            <p>📞 Hotline: 0902112527</p>
+
+            <p>
+                📍 Địa chỉ: Phường Định Công, Hà nội
+            </p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h4>Theo dõi</h4>
+
+            <a href="https://www.facebook.com/arovia.vn" target="_blank">
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/arovia.vn" target="_blank">
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/collection.js"></script>
+
+
+</body>
+
+</html>

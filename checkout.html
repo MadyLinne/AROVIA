@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AROVIA | Thanh toán</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            AROVIA
+        </a>
+
+        <nav id="navMenu">
+            <a href="index.html">Trang chủ</a>
+            <a href="collection.html">Bộ sưu tập</a>
+            <a href="about.html">Về chúng tôi</a>
+            <a href="disc.html">DISC</a>
+        </nav>
+
+        <div class="nav-icons">
+
+            <button id="cartBtn" class="cart-btn">
+
+                <img src="img/shopping-cart.png" alt="Cart">
+
+                <span id="cartBadge">0</span>
+            </button>
+
+            <button id="menuBtn" class="menu-btn">☰</button>
+        </div>
+
+    </header>
+
+    <!-- ================= CHECKOUT ================= -->
+
+    <main class="checkout-page">
+
+        <!-- LEFT -->
+
+        <section class="checkout-left">
+
+            <h2>Thông tin giao hàng</h2>
+
+            <form id="checkoutForm">
+
+                <div class="form-group">
+                    <label>Họ và tên *</label>
+                    <input id="fullName" type="text" placeholder="Nguyễn Văn A" required>
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group">
+                        <label>Số điện thoại *</label>
+                        <input id="phone" type="tel" placeholder="0901234567" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input id="email" type="email" placeholder="example@gmail.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <label>Địa chỉ giao hàng *</label>
+
+                    <input id="address" type="text" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Ghi chú</label>
+                    <textarea id="note" rows="4" placeholder="Ghi chú cho đơn hàng..."></textarea>
+                </div>
+
+                <h3>Phương thức thanh toán</h3>
+
+                <div class="payment-method">
+
+                    <label class="payment-card">
+
+                        <input type="radio" name="payment" value="COD" checked>
+
+                        <div>
+                            <strong>Thanh toán khi nhận hàng (COD)</strong>
+                            <p>Thanh toán sau khi nhận sản phẩm.</p>
+                        </div>
+                    </label>
+
+                    <label class="payment-card">
+
+                        <input type="radio" name="payment" value="QR">
+
+                        <div>
+                            <strong>Chuyển khoản VietQR</strong>
+                            <p>Quét mã QR bằng ứng dụng ngân hàng.</p>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- QR -->
+
+                <div id="qrSection" class="qr-section">
+
+                    <h3>Quét mã VietQR</h3>
+
+                    <img id="qrImage" alt="VietQR">
+
+                    <p>Số tiền cần thanh toán</p>
+
+                    <h2 id="qrAmount">0₫</h2>
+
+                    <button type="button" class="paid-btn" onclick="confirmPayment()">
+                        Tôi đã thanh toán
+                    </button>
+
+                </div>
+
+                <div class="agree">
+
+                    <input type="checkbox" required>
+
+                    <span>Tôi xác nhận thông tin giao hàng là chính xác.</span>
+
+                </div>
+
+                <button type="button" class="place-order" onclick="confirmPayment()">ĐẶT HÀNG</button>
+            </form>
+
+        </section>
+
+        <!-- RIGHT -->
+
+        <aside class="checkout-right">
+
+            <div class="order-box">
+
+                <h2>Đơn hàng của bạn</h2>
+
+                <div id="orderList">
+
+                </div>
+
+                <div class="price-row">
+
+                    <span>Tạm tính</span>
+
+                    <strong id="subTotal">0₫</strong>
+
+                </div>
+
+                <div class="price-row">
+                    <span>Phí vận chuyển</span>
+                    <span>
+                        Miễn phí
+                    </span>
+                </div>
+
+                <hr>
+
+                <div class="price-row total">
+                    <span>Tổng cộng</span>
+                    <strong id="totalPrice">
+                        0₫
+                    </strong>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- ================= CART DRAWER ================= -->
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+
+            <h2>
+                Giỏ hàng
+                <span id="cartCount">(0)</span>
+            </h2>
+
+            <button id="closeCart">✕</button>
+
+        </div>
+
+        <div class="cart-body" id="cartBody">
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Tổng cộng</span>
+
+                <strong id="cartTotal">0₫</strong>
+            </div>
+
+            <button class="checkout-btn" onclick="window.location.href='checkout.html'">Thanh toán</button>
+        </div>
+
+    </aside>
+
+    <div id="paymentModal" class="payment-modal">
+
+        <div class="payment-box">
+
+            <div class="success-icon">✔</div>
+
+            <h2>
+                Thanh toán thành công
+            </h2>
+
+            <p>
+                Thanh toán của bạn đã được xác minh thành công.
+                <br>
+                Cảm ơn bạn đã lựa chọn AROVIA.
+            </p>
+
+            <button onclick="continueShopping()">
+                Tiếp tục mua sắm
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+  <footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h3>AROVIA</h3>
+
+            <p>
+                Fragrance with a Unique Signature
+            </p>
+
+            <p class="copyright">
+                © 2026 AROVIA Boutique Perfume. All Rights Reserved.
+            </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h4>Liên hệ</h4>
+
+            <p>📧 Email: arovia.vn@gmail.com</p>
+
+            <p>📞 Hotline: 0902112527</p>
+
+            <p>
+                📍 Địa chỉ: Phường Định Công, Hà nội
+            </p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h4>Theo dõi</h4>
+
+            <a href="https://www.facebook.com/arovia.vn" target="_blank">
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/arovia.vn" target="_blank">
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/layout.js"></script>
+
+</body>
+
+</html>

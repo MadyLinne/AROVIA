@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AROVIA | Fragrance Quiz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/disc.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            AROVIA
+        </a>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Trang chủ</a>
+            <a href="collection.html">Bộ sưu tập</a>
+            <a href="about.html">Về chúng tôi</a>
+            <a href="disc.html">DISC</a>
+
+        </nav>
+
+        <div class="nav-icons">
+
+            <button id="menuBtn" class="menu-btn">☰</button>
+
+        </div>
+
+    </header>
+
+    <main class="quiz-page">
+
+        <div class="quiz-box">
+
+            <div class="quiz-top">
+
+                <h1>Fragrance Finder</h1>
+
+                <p>Tìm mùi hương phù hợp nhất với cá tính của bạn.</p>
+
+            </div>
+
+            <div class="progress-area">
+
+                <div class="progress-text">
+
+                    <span id="currentQuestion">1</span>
+
+                    /
+
+                    <span>10</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill" id="progressFill"></div>
+
+                </div>
+
+            </div>
+
+            <div id="questionContainer">
+
+                <section class="question active">
+
+                    <h2>Bạn thích phong cách nào?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Thanh lịch</button>
+                        <button class="answer">Quyến rũ</button>
+                        <button class="answer">Cá tính</button>
+                        <button class="answer">Năng động</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Bạn thường dùng nước hoa khi?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Đi làm</button>
+                        <button class="answer">Đi chơi</button>
+                        <button class="answer">Hẹn hò</button>
+                        <button class="answer">Dự tiệc</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Bạn yêu thích nhóm hương nào?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Hoa</button>
+                        <button class="answer">Gỗ</button>
+                        <button class="answer">Cam chanh</button>
+                        <button class="answer">Vanilla</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Độ lưu hương mong muốn?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">4 giờ</button>
+                        <button class="answer">6 giờ</button>
+                        <button class="answer">8 giờ</button>
+                        <button class="answer">10+ giờ</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Bạn thường dùng vào mùa?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Xuân</button>
+                        <button class="answer">Hạ</button>
+                        <button class="answer">Thu</button>
+                        <button class="answer">Đông</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Giới tính?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Nam</button>
+                        <button class="answer">Nữ</button>
+                        <button class="answer">Unisex</button>
+                        <button class="answer">Khác</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Độ tuổi?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Dưới 18</button>
+                        <button class="answer">18 - 25</button>
+                        <button class="answer">26 - 35</button>
+                        <button class="answer">35+</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Ngân sách của bạn?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Dưới 2 triệu</button>
+                        <button class="answer">2 - 3 triệu</button>
+                        <button class="answer">3 - 5 triệu</button>
+                        <button class="answer">Không giới hạn</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Bạn muốn người khác cảm nhận mình như thế nào?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Sang trọng</button>
+                        <button class="answer">Bí ẩn</button>
+                        <button class="answer">Dịu dàng</button>
+                        <button class="answer">Nổi bật</button>
+
+                    </div>
+
+                </section>
+
+                <section class="question">
+
+                    <h2>Bạn thích note hương nào nhất?</h2>
+
+                    <div class="answers">
+
+                        <button class="answer">Woody</button>
+                        <button class="answer">Floral</button>
+                        <button class="answer">Amber</button>
+                        <button class="answer">Citrus</button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="quiz-buttons">
+
+                <button id="prevBtn">
+
+                    Quay lại
+
+                </button>
+
+                <button id="nextBtn">
+
+                    Tiếp tục
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="loading-screen" id="loadingScreen">
+
+        <div class="loader"></div>
+
+        <h2>Đang phân tích cá tính...</h2>
+
+        <p>Tìm mùi hương phù hợp nhất với bạn.</p>
+
+    </div>
+
+    <div class="result-modal" id="resultModal">
+
+        <div class="result-box">
+
+            <img id="resultImage" src="img/shopArovia.png">
+
+            <h2>Bạn phù hợp với</h2>
+
+            <h1 id="resultName">
+
+                Noir Essence
+
+            </h1>
+
+            <p id="resultDescription">
+
+                Woody • Amber • Sang trọng
+
+            </p>
+
+            <div class="match">
+
+                Độ phù hợp
+
+                <strong>
+
+                    95%
+
+                </strong>
+
+            </div>
+
+            <div class="result-buttons">
+
+                <a id="viewProduct" href="product.html?id=1">
+
+                    Xem sản phẩm
+
+                </a>
+
+                <button onclick="location.reload()">
+
+                    Làm lại
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>AROVIA</h3>
+
+                <p>
+                    Fragrance with a Unique Signature
+                </p>
+
+                <p class="copyright">
+                    © 2026 AROVIA Boutique Perfume. All Rights Reserved.
+                </p>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h4>Liên hệ</h4>
+
+                <p>📧 Email: arovia.vn@gmail.com</p>
+
+                <p>📞 Hotline: 0902112527</p>
+
+                <p>
+                    📍 Địa chỉ: Phường Định Công, Hà nội
+                </p>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h4>Theo dõi</h4>
+
+                <a href="https://www.facebook.com/arovia.vn" target="_blank">
+                    Facebook
+                </a>
+
+                <a href="https://www.instagram.com/arovia.vn" target="_blank">
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/layout.js"></script>
+    <script src="js/disc.js"></script>
+
+</body>
+
+</html>

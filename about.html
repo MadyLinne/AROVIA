@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AROVIA | Về chúng tôi</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+
+</head>
+
+<body>
+
+  <header class="navbar">
+        <a href="index.html" class="logo">
+            AROVIA
+        </a>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Trang chủ</a>
+            <a href="collection.html">Bộ sưu tập</a>
+            <a href="about.html">Về chúng tôi</a>
+            <a href="disc.html">DISC</a>
+        </nav>
+
+        <div class="nav-icons">
+            <button id="cartBtn" class="cart-btn">
+                <img src="img/shopping-cart.png" alt="Cart">
+                <span id="cartBadge">0</span>
+            </button>
+
+            <button id="menuBtn" class="menu-btn"> ☰ </button>
+
+        </div>
+
+    </header>
+
+    <main class="about-page">
+
+        <section class="about-hero">
+
+            <div class="about-text">
+
+                <span>ABOUT AROVIA</span>
+
+                <h1>
+                    Fragrance with a
+                    <br>
+                    Unique Signature
+                </h1>
+
+                <p>
+                    AROVIA được tạo nên với niềm tin rằng mỗi con người đều sở hữu
+                    một dấu ấn riêng biệt.
+                    Chúng tôi không chỉ tạo ra nước hoa,
+                    mà còn tạo nên những mùi hương giúp bạn kể câu chuyện của chính mình.
+                </p>
+
+            </div>
+
+            <div class="about-image">
+                <img src="img/shopArovia.png">
+            </div>
+
+        </section>
+
+        <section class="about-story">
+
+            <div class="story-image">
+                <img src="img/shopAbout.png">
+            </div>
+
+            <div class="story-text">
+
+                <h2>
+                    Câu chuyện của chúng tôi
+                </h2>
+
+                <p>
+                    Từ những nguyên liệu được tuyển chọn kỹ lưỡng,
+                    AROVIA kết hợp nghệ thuật chế tác nước hoa hiện đại cùng cảm hứng
+                    từ thiên nhiên để tạo nên những hương thơm mang tính cá nhân.
+                </p>
+
+                <p>
+                    Mỗi chai nước hoa đều được phát triển nhằm phản ánh phong cách,
+                    cảm xúc và cá tính của người sở hữu.
+                    Chúng tôi tin rằng mùi hương là một chữ ký vô hình,
+                    ở lại trong ký ức lâu hơn bất kỳ lời giới thiệu nào.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="about-values">
+
+            <h2>
+                Giá trị cốt lõi
+            </h2>
+
+            <div class="value-grid">
+
+                <div class="value-card">
+
+                    <h3>
+                        01
+                    </h3>
+
+                    <h4>
+                        Signature
+                    </h4>
+
+                    <p>
+                        Mỗi mùi hương đều mang dấu ấn riêng,
+                        không chạy theo xu hướng nhất thời.
+                    </p>
+
+                </div>
+
+                <div class="value-card">
+
+                    <h3>
+                        02
+                    </h3>
+
+                    <h4>
+                        Quality
+                    </h4>
+
+                    <p>
+                        Sử dụng nguyên liệu cao cấp
+                        để tạo nên hương thơm bền bỉ và tinh tế.
+                    </p>
+                </div>
+
+                <div class="value-card">
+
+                    <h3>
+                        03
+                    </h3>
+
+                    <h4>
+                        Craftsmanship
+                    </h4>
+
+                    <p>
+                        Chú trọng từng chi tiết từ thiết kế,
+                        bao bì cho đến trải nghiệm khách hàng.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="quote-section">
+            <h2>
+                "Fragrance with a Unique Signature"
+            </h2>
+
+            <p>
+                Không chỉ là một câu slogan,
+                đó là triết lý mà AROVIA luôn theo đuổi.
+            </p>
+        </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+
+            <h2>
+                Giỏ hàng
+                <span id="cartCount">(0)</span>
+            </h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="cart-body" id="cartBody">
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Tổng cộng</span>
+
+                <strong id="cartTotal">0₫</strong>
+            </div>
+            <button class="checkout-btn" onclick="goCheckout()">Thanh toán</button>
+        </div>
+    </aside>
+
+ <footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h3>AROVIA</h3>
+
+            <p>
+                Fragrance with a Unique Signature
+            </p>
+
+            <p class="copyright">
+                © 2026 AROVIA Boutique Perfume. All Rights Reserved.
+            </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h4>Liên hệ</h4>
+
+            <p>📧 Email: arovia.vn@gmail.com</p>
+
+            <p>📞 Hotline: 0902112527</p>
+
+            <p>
+                📍 Địa chỉ: Phường Định Công, Hà nội
+            </p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h4>Theo dõi</h4>
+
+            <a href="https://www.facebook.com/arovia.vn" target="_blank">
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/arovia.vn" target="_blank">
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/layout.js"></script>
+</body>
+</html>

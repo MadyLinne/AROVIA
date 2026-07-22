@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AROVIA | Bộ sưu tập</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/collection.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            AROVIA
+        </a>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Trang chủ</a>
+            <a href="collection.html" class="active">Bộ sưu tập</a>
+            <a href="about.html">Về chúng tôi</a>
+            <a href="disc.html">DISC</a>
+
+        </nav>
+
+        <div class="nav-icons">
+
+            <button id="cartBtn" class="cart-btn">
+                <img src="img/shopping-cart.png" alt="Cart">
+                <span id="cartBadge">0</span>
+            </button>
+
+            <button id="menuBtn" class="menu-btn">☰</button>
+        </div>
+
+    </header>
+
+    <main class="collection-page">
+
+        <section class="collection-hero">
+
+            <h1>
+                Bộ sưu tập AROVIA
+            </h1>
+
+            <p>
+                Fragrance with a Unique Signature
+            </p>
+
+        </section>
+
+        <section class="products">
+
+            <!-- 1 -->
+
+            <div class="product-card">
+
+                <a href="product.html?id=1" class="product-link">
+
+                    <img src="img/cocoNoir.png" alt="Noir Essence">
+
+                    <h3>Noir Essence</h3>
+
+                    <p class="notes">
+                        Woody • Leather • Musk
+                    </p>
+
+                </a>
+
+                <p class="price">
+                    2.390.000₫
+                </p>
+
+                <div class="product-actions">
+
+                    <a href="product.html?id=1" class="detail-btn">
+                        Xem chi tiết
+                    </a>
+
+                    <button class="add-cart-btn" onclick="addToCart(1,'Noir Essence',2390000,'img/cocoNoir.png',1)">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="product-card">
+
+                <a href="product.html?id=2" class="product-link">
+
+                    <img src="img/cocoNoir.png">
+
+                    <h3>White Bloom</h3>
+
+                    <p class="notes">
+                        Jasmine • Rose • Vanilla
+                    </p>
+
+                </a>
+
+                <p class="price">
+                    2.190.000₫
+                </p>
+
+                <div class="product-actions">
+
+                    <a href="product.html?id=2" class="detail-btn">
+                        Xem chi tiết
+                    </a>
+
+                    <button class="add-cart-btn" onclick="addToCart(2,'White Bloom',2190000,'img/cocoNoir.png',1)">
+                        Thêm vào giỏ
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- 3 -->
+
+            <div class="product-card">
+
+                <a href="product.html?id=3" class="product-link">
+
+                    <img src="img/cocoNoir.png">
+
+                    <h3>Velvet Rose</h3>
+
+                    <p class="notes">
+                        Rose • Musk • Peony
+                    </p>
+
+                </a>
+
+                <p class="price">
+                    2.590.000₫
+                </p>
+
+                <div class="product-actions">
+
+                    <a href="product.html?id=3" class="detail-btn">
+                        Xem chi tiết
+                    </a>
+
+                    <button class="add-cart-btn" onclick="addToCart(3,'Velvet Rose',2590000,'img/cocoNoir.png',1)">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- 4 -->
+
+            <div class="product-card">
+
+                <a href="product.html?id=4" class="product-link">
+
+                    <img src="img/cocoNoir.png">
+
+                    <h3>Golden Musk</h3>
+
+                    <p class="notes">
+                        Amber • Sandalwood • Musk
+                    </p>
+
+                </a>
+
+                <p class="price">
+                    2.690.000₫
+                </p>
+
+                <div class="product-actions">
+
+                    <a href="product.html?id=4" class="detail-btn">
+                        Xem chi tiết
+                    </a>
+
+                    <button class="add-cart-btn" onclick="addToCart(4,'Golden Musk',2690000,'img/cocoNoir.png',1)">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- 5 -->
+
+            <div class="product-card">
+
+                <a href="product.html?id=5" class="product-link">
+
+                    <img src="img/cocoNoir.png">
+
+                    <h3>Ocean Mist</h3>
+
+                    <p class="notes">
+                        Marine • Citrus • Cedar
+                    </p>
+
+                </a>
+
+                <p class="price">
+                    2.090.000₫
+                </p>
+
+                <div class="product-actions">
+
+                    <a href="product.html?id=5" class="detail-btn">
+                        Xem chi tiết
+                    </a>
+
+                    <button class="add-cart-btn" onclick="addToCart(5,'Ocean Mist',2090000,'img/cocoNoir.png',1)">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- 6 -->
+
+            <div class="product-card">
+
+                <a href="product.html?id=6" class="product-link">
+
+                    <img src="img/cocoNoir.png">
+
+                    <h3>Midnight Amber</h3>
+
+                    <p class="notes">
+                        Amber • Oud • Vanilla
+                    </p>
+                </a>
+
+                <p class="price">
+                    2.790.000₫
+                </p>
+
+                <div class="product-actions">
+
+                    <a href="product.html?id=6" class="detail-btn">
+                        Xem chi tiết
+                    </a>
+
+                    <button class="add-cart-btn" onclick="addToCart(6,'Midnight Amber',2790000,'img/cocoNoir.png',1)">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+            <h2>
+                Giỏ hàng
+                <span id="cartCount">(0)</span>
+            </h2>
+
+            <button id="closeCart">✕ </button>
+        </div>
+
+        <div class="cart-body" id="cartBody">
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Tổng cộng</span>
+                <strong id="cartTotal">0₫</strong>
+
+            </div>
+
+            <button class="checkout-btn" onclick="location.href='checkout.html'">
+                Thanh toán
+            </button>
+        </div>
+
+    </aside>
+
+  <footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h3>AROVIA</h3>
+
+            <p>
+                Fragrance with a Unique Signature
+            </p>
+
+            <p class="copyright">
+                © 2026 AROVIA Boutique Perfume. All Rights Reserved.
+            </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h4>Liên hệ</h4>
+
+            <p>📧 Email: arovia.vn@gmail.com</p>
+
+            <p>📞 Hotline: 0902112527</p>
+
+            <p>
+                📍 Địa chỉ: Phường Định Công, Hà nội
+            </p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h4>Theo dõi</h4>
+
+            <a href="https://www.facebook.com/arovia.vn" target="_blank">
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/arovia.vn" target="_blank">
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/collection.js"></script>
+    <script src="js/layout.js"></script>
+
+</body>
+
+</html>
